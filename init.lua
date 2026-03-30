@@ -26,3 +26,5 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
+
+vim.opt.smartindent = true
