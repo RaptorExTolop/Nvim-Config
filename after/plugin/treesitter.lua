@@ -3,9 +3,9 @@ require('nvim-treesitter').setup {
   install_dir = vim.fn.stdpath('data') .. '/site'
 }
 
-require('nvim-treesitter').install { 'go', 'cpp', 'c_sharp', 'lua', 'javascript' }
+require('nvim-treesitter').install { 'go', 'cpp', 'c_sharp', 'lua', 'javascript', 'odin', 'zig' }
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'javascript', 'go', 'cpp', 'cs', 'lua' },
+  pattern = { 'javascript', 'go', 'cpp', 'cs', 'lua', 'odin', 'zig' },
   callback = function() vim.treesitter.start() end,
 })
